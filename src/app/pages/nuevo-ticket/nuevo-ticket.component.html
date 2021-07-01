@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <td>
+            <span *ngIf="!objtTicket" id="lblNuevoTicket">
+                Cargando...
+            </span>
+            <span *ngIf="objtTicket">
+                Numero: {{objtTicket.numero}}
+            </span>
+            <span *ngIf="objtTicket">
+                Fecha: {{objtTicket.fecha}}
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="agregarTicket()" class="btn btn-secondary btn-lg">
+                Generar nuevo ticket
+            </button>
+        </td>
+    </tr>
+</table>

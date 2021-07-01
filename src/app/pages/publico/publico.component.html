@@ -1,0 +1,35 @@
+<table>
+    <tr>
+        <td valign="middle" class="ticket-actual">
+            <span id="lblTicket1" class="ticket-actual-numero">Ticket {{ticketsEnAtencion[0]?.numero}}</span>
+            <br>
+            <span id="lblEscritorio1" class="ticket-actual-escritorio">Escritorio
+                {{ticketsEnAtencion[0]?.escritorio}}</span>
+        </td>
+        <td>
+            <table>
+                <tr *ngFor="let ticket of ticketsEnAtencion">
+                    <td>
+                        <span id="lblTicket2" class="ticket-secundario">Ticket {{ticket.numero}}</span>
+                        <br>
+                        <span id="lblEscritorio2">Escritorio {{ticket.escritorio}}</span>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>
+                        <span id="lblTicket3" class="ticket-secundario">Ticket Y</span>
+                        <br>
+                        <span id="lblEscritorio3">Escritorio Y</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="lblTicket4" class="ticket-secundario">Ticket Z</span>
+                        <br>
+                        <span id="lblEscritorio4">Escritorio Z</span>
+                    </td>
+                </tr> -->
+            </table>
+        </td>
+    </tr>
+</table>
